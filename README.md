@@ -1,8 +1,21 @@
-# 1일차
-## Object 클래스
-- 자바가 기본으로 제공하는 라이브러리 중에 가장 기본은 java.lang 패키지이다.
-- 자바 언어를 이루는 가장 기본이 되는 클래스들을 보관하는 패키지
-- java.lang패키지는 자동으로 임포트가 되므로 import 생략 가능
-- 자바에서 모든 클래스 최상위 부모 클래스는 Object 클래스이다.
-- 상속 받을 부모 클래스가 없으면 묵시적으로 Object 클래스를 상속 받는다(생략 권장).
-- Object는 모든 객체에 필요한 공통 기능을 제공하므로, 편리하게 상속받을수 있다.
+# 자바 - 중급편 1
+
+## [1일차 : Object 클래스](https://github.com/ch9729/java-mid1/blob/main/src/md/day01.md)
+> 1. java.lang 패키지 소개
+> 2. Object 클래스
+> 3. Object 다형성
+> 4. Object 배열
+> 5. toString()
+> 6. Object 와 OCP
+> 7. equals() - 동일성과 동등성
+> 8. equals() - 구현
+> 9. 정리
+
+## [2일차 : 불변 객체](https://github.com/ch9729/java-mid1/blob/main/src/md/day02.md)
+> 1. 기본형과 참조형의 공유
+> 2. 공유 참조와 사이드 이펙트
+> 3. 불변 객체 - 도입
+> 4. 불변 객체 - 예제
+> 5. 불변 객체 - 값 변경
+> 6. 정리
+
