@@ -6,7 +6,6 @@ public class ObjectPolyExample1 {
         Dog dog = new Dog();
         Car car = new Car();
 
-
         action(dog);
         action(car);
     }
