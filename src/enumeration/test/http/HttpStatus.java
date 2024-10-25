@@ -1,7 +1,10 @@
 package enumeration.test.http;
 
 public enum HttpStatus {
-    OK(200, "OK"),BAD_REQUEST(400, "Bad Request"),NOT_FOUND(404, "Not Found"),INTERNAL_SERVER_ERROR(500, "Internal Server Error");
+    OK(200, "OK"),
+    BAD_REQUEST(400, "Bad Request"),
+    NOT_FOUND(404, "Not Found"),
+    INTERNAL_SERVER_ERROR(500, "Internal Server Error");
 
     private final int code;
     private final String message;
@@ -12,7 +15,9 @@ public enum HttpStatus {
     }
 
     public static HttpStatus findByCode(int code) {
-        for (HttpStatus status : values()) {
+        //values() = 상수들을 배열로 반환
+        HttpStatus[] values = values();
+        for (HttpStatus status : values) {
             if(status.getCode() == code) {
                 return status;
             }
@@ -21,7 +26,7 @@ public enum HttpStatus {
     }
 
     public boolean isSuccess() {
-        return code >= 200 && code <= 299;
+        return 200 <= code && code <= 299;
     }
 
     public int getCode() {
